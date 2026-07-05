@@ -1,0 +1,13 @@
+{
+  "eyebrow": "Level Complete",
+  "heading": "Continue?",
+  "prompt": "▸ Insert coin to connect",
+  "links": [
+    { "label": "Email", "href": "mailto:bhardwaj.kush96@gmail.com", "icon": "email", "style": "primary" },
+    { "label": "in LinkedIn", "href": "https://www.linkedin.com/in/kush-bhardwaj28", "icon": "linkedin", "style": "secondary", "external": true },
+    { "label": "GitHub", "href": "https://github.com/kushbhardwaj28", "icon": "github", "style": "secondary", "external": true },
+    { "label": "Resume", "href": "/KushBhardwajResume.pdf", "icon": "download", "style": "secondary", "download": true }
+  ],
+  "footerNote": "© 2026 Kush Bhardwaj · Built with pixels & caffeine",
+  "konamiHint": "↑ ↑ ↓ ↓ ← → ← → B A — try it"
+}
