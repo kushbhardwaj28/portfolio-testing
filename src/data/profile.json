@@ -1,0 +1,29 @@
+{
+  "name": { "first": "KUSH", "last": "BHARDWAJ" },
+  "badge": "Press Start · Player 1",
+  "role": "Full-Stack Engineer",
+  "experienceYears": 8,
+  "tagline": "Full-Stack Engineer **// 8 years** shipping backend + frontend systems — from real-time C media daemons to configurable UI engines.",
+  "marquee": ["NODE.JS", "JAVA", "TYPESCRIPT", "REACT", "GRAPHQL", "KUBERNETES", "FLUTTER", "C / C++"],
+  "stats": [
+    { "value": "08", "label": "Years XP" },
+    { "value": "04", "label": "Levels Cleared" },
+    { "value": "01", "label": "Champion Award" },
+    { "value": "10+", "label": "Languages/Tools" }
+  ],
+  "about": {
+    "paragraphs": [
+      "**Full-stack engineer with 8 years in the game.** I build robust backend services in Node.js and Java, tuned for scalability, reliability and security — and I bring the same care to the frontend.",
+      "Lately I've been deep in a Linux C daemon that orchestrates real-time media across multi-display walls, wiring PipeWire audio routing over D-Bus and WebSocket JSON-RPC. Before that: modular monorepos, configurable layout + rule engines, and a GraphQL-to-everything transpiler.",
+      "I take pride in problem-solving and shipping — and I've been recognized with a **Champion Award** for project contribution."
+    ],
+    "playerCard": [
+      { "label": "Class", "value": "Full-Stack" },
+      { "label": "Base", "value": "India" },
+      { "label": "Current", "value": "Barco — Lead SDE" },
+      { "label": "Education", "value": "B.Tech, NITRA" },
+      { "label": "Special", "value": "Champion Award" }
+    ]
+  },
+  "resumeUrl": "/KushBhardwajResume.pdf"
+}

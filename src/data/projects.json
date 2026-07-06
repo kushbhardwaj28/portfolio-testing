@@ -1,0 +1,54 @@
+{
+  "projects": [
+    {
+      "id": "medicus",
+      "featured": true,
+      "tag": "Featured · Smart India Hackathon",
+      "name": "MEDICUS",
+      "description": "A mobile app to manage doctor appointments and related documents — schedule visits, and track & share patient data during appointments. Built during the Smart India Hackathon.",
+      "stack": ["Flutter", "Mobile", "Local DB", "Healthcare"],
+      "icon": "medkit",
+      "accent": "p1"
+    },
+    {
+      "id": "media-daemon",
+      "featured": false,
+      "tag": "Barco",
+      "name": "Media Orchestration Daemon",
+      "description": "Linux C daemon managing the full lifecycle of 10+ media process types across multi-display walls via D-Bus & WebSocket JSON-RPC.",
+      "stack": ["C", "D-Bus", "PipeWire"],
+      "icon": "gear",
+      "accent": "p3"
+    },
+    {
+      "id": "graphql-transpiler",
+      "featured": false,
+      "tag": "Medidata",
+      "name": "GraphQL Transpiler",
+      "description": "Generates TypeScript interfaces, Avro & SQL schemas and CRUD APIs straight from a GraphQL schema — +80% development speed.",
+      "stack": ["TypeScript", "GraphQL", "Codegen"],
+      "icon": "transpiler",
+      "accent": "p2"
+    },
+    {
+      "id": "layout-engine",
+      "featured": false,
+      "tag": "Tractable",
+      "name": "Configurable Layout Engine",
+      "description": "A config-driven UI layout system + Storybook component library — +50% dev speed, +60% team productivity across the app.",
+      "stack": ["React", "Storybook", "Monorepo"],
+      "icon": "puzzle",
+      "accent": "p4"
+    },
+    {
+      "id": "construction-platform",
+      "featured": false,
+      "tag": "Buildsys",
+      "name": "Construction Lifecycle Platform",
+      "description": "Cloud platform for meetings, files, drawings, RFI & tasks — full Flutter mobile architecture with local DB and autogen DTO→Dart.",
+      "stack": ["ASP.NET", "Flutter", "C#"],
+      "icon": "tower",
+      "accent": "p1"
+    }
+  ]
+}

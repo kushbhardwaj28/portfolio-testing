@@ -1,0 +1,58 @@
+{
+  "heading": "Career Path",
+  "totalYears": 8,
+  "levels": [
+    {
+      "id": "barco",
+      "levelNumber": 4,
+      "period": "02/2026 — Present",
+      "role": "Lead Software Development Engineer",
+      "company": "Barco",
+      "location": "Noida",
+      "status": "active",
+      "description": "Linux C systems daemon orchestrating real-time media across multi-display; manages 10+ media process types via D-Bus & WebSocket JSON-RPC. Integrated PipeWire/WirePlumber for per-source audio routing. Cut PR-check runtime 60%.",
+      "tenureMonths": 5,
+      "stack": ["C", "D-Bus", "PipeWire", "WebSocket"],
+      "accent": "p1"
+    },
+    {
+      "id": "tractable",
+      "levelNumber": 3,
+      "period": "07/2025 — 02/2026",
+      "role": "Senior Software Engineer",
+      "company": "Tractable",
+      "location": "Noida",
+      "status": "cleared",
+      "description": "Led a team of 5 migrating a multi-repo codebase into a modular monorepo. Built a configurable layout system (+50% dev speed) and a Storybook component library (+60% productivity), plus a configurable strategy rule engine and orchestration engines.",
+      "tenureMonths": 7,
+      "stack": ["Monorepo", "React", "Storybook", "Rule Engine"],
+      "accent": "p2"
+    },
+    {
+      "id": "medidata",
+      "levelNumber": 2,
+      "period": "07/2020 — 07/2025",
+      "role": "R&D Engineer",
+      "company": "Medidata (Dassault Systèmes)",
+      "location": "Pune",
+      "status": "cleared",
+      "description": "Stream lead for a team of 5 building patient & CTO-centric clinical-trial UIs. Built a transpiler generating TS interfaces, Avro/SQL schemas & CRUD APIs from GraphQL (+80% dev speed). Two consecutive promotions + India Champion Award.",
+      "tenureMonths": 60,
+      "stack": ["GraphQL", "TypeScript", "Avro", "SQL"],
+      "accent": "p3"
+    },
+    {
+      "id": "buildsys",
+      "levelNumber": 1,
+      "period": "07/2018 — 06/2020",
+      "role": "Full-Stack Software Developer",
+      "company": "Buildsys",
+      "location": "New Delhi",
+      "status": "cleared",
+      "description": "Cloud construction-lifecycle platform: meetings, files, drawings, RFI & tasks on ASP.NET. Built the full Flutter mobile architecture + local DB, autogen DTO→Dart scripts, and shared PDF/invite generation in C#.",
+      "tenureMonths": 23,
+      "stack": ["ASP.NET", "Flutter", "C#", "Dart"],
+      "accent": "p4"
+    }
+  ]
+}
