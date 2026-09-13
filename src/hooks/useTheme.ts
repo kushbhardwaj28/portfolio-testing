@@ -6,16 +6,15 @@ const STORAGE_KEY = 'kbq_theme';
 
 function readStoredTheme(): Theme {
   try {
-    return localStorage.getItem(STORAGE_KEY) === 'dark' ? 'dark' : 'light';
+    return localStorage.getItem(STORAGE_KEY) === 'light' ? 'light' : 'dark';
   } catch {
-    return 'light';
+    return 'dark';
   }
 }
 
 /** Drives the light/dark `data-theme` attribute + persistence. Dark mode is the "secret" mode that boosts the pixel glow and reveals the arcade cabinet button. */
 export function useTheme() {
   const [theme, setThemeState] = useState<Theme>(() => readStoredTheme());
-
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme);
     try {

@@ -1,23 +1,8 @@
 @import "tailwindcss";
 
 /* ---------- theme tokens (swapped by [data-theme]) ---------- */
+/* Dark is the default (applies before JS sets data-theme, and whenever it's absent). */
 :root {
-  --bg: #f4ead3;
-  --bg2: #fffdf6;
-  --ink: #1b1610;
-  --muted: #6b5f4b;
-  --card: #fffdf6;
-  --line: #1b1610;
-  --p1: #e0402b;
-  --p2: #2455c4;
-  --p3: #f5b301;
-  --p4: #2fa84f;
-  --glow: 5px 5px 0;
-  --scan-opacity: 0;
-  --scanline-opacity: 0;
-  --dot: rgba(27, 22, 16, 0.1);
-}
-:root[data-theme='dark'] {
   --bg: #120e26;
   --bg2: #1b1440;
   --ink: #f4f0ff;
@@ -32,6 +17,22 @@
   --scan-opacity: 1;
   --scanline-opacity: 0;
   --dot: rgba(120, 90, 255, 0.18);
+}
+:root[data-theme='light'] {
+  --bg: #f4ead3;
+  --bg2: #fffdf6;
+  --ink: #1b1610;
+  --muted: #6b5f4b;
+  --card: #fffdf6;
+  --line: #1b1610;
+  --p1: #e0402b;
+  --p2: #2455c4;
+  --p3: #f5b301;
+  --p4: #2fa84f;
+  --glow: 5px 5px 0;
+  --scan-opacity: 0;
+  --scanline-opacity: 0;
+  --dot: rgba(27, 22, 16, 0.1);
 }
 
 @theme {
