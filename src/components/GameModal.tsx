@@ -5,7 +5,7 @@ import type { GameControlHandle, GameStats, Direction } from '@/games/types';
 import { DPad } from './DPad';
 
 export function GameModal() {
-  const { isGameOpen, activeGameId, closeGame, selectGame, theme, muted, playBlip, hoverSfx, showToast } = usePortfolio();
+  const { isGameOpen, activeGameId, closeGame, selectGame, theme, muted, playBlip, showToast } = usePortfolio();
   const [stats, setStats] = useState<GameStats>({ score: 0, hi: 0 });
   const gameHandleRef = useRef<GameControlHandle>(null);
   const game = getGame(activeGameId);
@@ -40,12 +40,12 @@ export function GameModal() {
               <button
                 className="btn-icon pix !w-[34px] !h-[34px] text-xs"
                 title="Back to arcade"
-                {...hoverSfx(() => selectGame(null))}
+                onClick={() => selectGame(null)}
               >
                 ‹
               </button>
             )}
-            <button className="btn-icon pix !w-[34px] !h-[34px] text-xs" title="Close" {...hoverSfx(closeGame)}>
+            <button className="btn-icon pix !w-[34px] !h-[34px] text-xs" title="Close" onClick={closeGame}>
               ✕
             </button>
           </div>
@@ -85,10 +85,10 @@ export function GameModal() {
               <button
                 key={g.id}
                 className="pixel-panel flex flex-col items-center gap-2 p-4 hover:-translate-x-0.5 hover:-translate-y-0.5 transition-transform cursor-inherit"
-                {...hoverSfx(() => {
+                onClick={() => {
                   playBlip(660, 0.08);
                   selectGame(g.id);
-                })}
+                }}
               >
                 <g.Icon className="w-10 h-10 text-p2" />
                 <span className="pix text-[10px] uppercase text-ink">{g.shortLabel}</span>

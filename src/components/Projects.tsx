@@ -1,10 +1,8 @@
 import { projects } from '@/data';
-import { usePortfolio } from '@/context/PortfolioContext';
 import { PROJECT_ICONS } from './icons/PixelIcons';
 import { SectionHeading } from './SectionHeading';
 
 export function Projects() {
-  const { hoverSfx } = usePortfolio();
   const featured = projects.projects.filter((p) => p.featured);
   const rest = projects.projects.filter((p) => !p.featured);
 
@@ -18,7 +16,6 @@ export function Projects() {
             <div
               key={project.id}
               className="pixel-panel p-[22px] relative overflow-hidden transition-transform hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-[8px_8px_0_var(--p2)] col-span-full grid grid-cols-1 min-[821px]:grid-cols-2 gap-[22px] items-center"
-              {...hoverSfx()}
             >
               <div>
                 <div className="pix text-[8px] text-p1 uppercase font-bold">{project.tag}</div>
@@ -47,7 +44,6 @@ export function Projects() {
             <div
               key={project.id}
               className="pixel-panel p-[22px] relative overflow-hidden transition-transform hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-[8px_8px_0_var(--p2)]"
-              {...hoverSfx()}
             >
               <div className="mb-3 leading-none">
                 <Icon className="w-[42px] h-[42px] inline-block" style={{ color: `var(--${project.accent})` }} />

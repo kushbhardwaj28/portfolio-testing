@@ -1,11 +1,9 @@
 import { skills } from '@/data';
-import { usePortfolio } from '@/context/PortfolioContext';
 import { SectionHeading } from './SectionHeading';
 
 const MAX_PIPS = 5;
 
 export function Skills() {
-  const { hoverSfx } = usePortfolio();
 
   return (
     <section className="py-[66px] relative" id="skills">
@@ -34,7 +32,7 @@ export function Skills() {
           <h4 className="pix text-[10px] text-p1 uppercase mb-3.5">▸ Inventory</h4>
           <div className="flex flex-wrap gap-2.5">
             {skills.inventory.map((item) => (
-              <span key={item} className="chip-pixel pix" {...hoverSfx()}>
+              <span key={item} className="chip-pixel pix">
                 {item}
               </span>
             ))}

@@ -5,7 +5,7 @@ import { useGlitchTypewriter } from '@/hooks/useGlitchTypewriter';
 import { renderHighlighted } from '@/lib/highlight';
 
 export function Hero() {
-  const { theme, hoverSfx } = usePortfolio();
+  const { theme } = usePortfolio();
   const nameLines = useMemo(() => [profile.name.first, profile.name.last], []);
   const [firstLine, lastLine] = useGlitchTypewriter(nameLines);
   const marqueeItems = [...profile.marquee, ...profile.marquee];
@@ -60,10 +60,10 @@ export function Hero() {
       </div>
 
       <div className="flex flex-wrap gap-4 mt-[30px]">
-        <a href="#projects" className="btn-pixel pix bg-p1 text-white" {...hoverSfx()}>
+        <a href="#projects" className="btn-pixel pix bg-p1 text-white">
           ▸ View Projects
         </a>
-        <a href={profile.resumeUrl} download className="btn-pixel pix bg-card text-ink" {...hoverSfx()}>
+        <a href={profile.resumeUrl} download className="btn-pixel pix bg-card text-ink">
           ⤓ Download Resume
         </a>
       </div>

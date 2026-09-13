@@ -10,7 +10,7 @@ const NAV_LINKS = [
 ];
 
 export function Nav() {
-  const { theme, toggleTheme, muted, toggleMuted, openGame, hoverSfx } = usePortfolio();
+  const { theme, toggleTheme, muted, toggleMuted, openGame } = usePortfolio();
 
   return (
     <nav className="sticky top-0 z-50 backdrop-blur-[8px] bg-[color-mix(in_srgb,var(--bg)_82%,transparent)] border-b-[3px] border-line">
@@ -24,22 +24,19 @@ export function Nav() {
               key={link.href}
               href={link.href}
               className="pix text-[9px] uppercase text-muted hover:text-p1 transition-colors"
-              {...hoverSfx()}
             >
               {link.label}
             </a>
           ))}
         </div>
         <div className="flex gap-2.5 items-center">
-          {theme === 'dark' && (
-            <button className="btn-icon pix" title="Insert coin — play" {...hoverSfx(() => openGame())}>
-              <GamepadIcon className="w-5 h-5" />
-            </button>
-          )}
-          <button className="btn-icon pix" title="Sound" {...hoverSfx(toggleMuted)}>
+          <button className="btn-icon pix" title="Insert coin — play" onClick={() => openGame()}>
+            <GamepadIcon className="w-5 h-5" />
+          </button>
+          <button className="btn-icon pix" title="Sound" onClick={toggleMuted}>
             {muted ? <SpeakerOffIcon className="w-5 h-5" /> : <SpeakerOnIcon className="w-5 h-5" />}
           </button>
-          <button className="btn-icon pix" title="Theme" {...hoverSfx(toggleTheme)}>
+          <button className="btn-icon pix" title="Theme" onClick={toggleTheme}>
             {theme === 'dark' ? <SunIcon className="w-5 h-5" /> : <MoonIcon className="w-5 h-5" />}
           </button>
         </div>

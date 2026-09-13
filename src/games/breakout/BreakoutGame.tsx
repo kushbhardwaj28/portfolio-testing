@@ -125,6 +125,7 @@ export const BreakoutGame = forwardRef<GameControlHandle, GameProps>(function Br
     p.setup = () => {
       const cnv = p.createCanvas(CANVAS_SIZE, CANVAS_SIZE);
       cnv.elt.style.width = '100%';
+      cnv.elt.style.height = '100%';
       cnv.elt.style.imageRendering = 'pixelated';
       cnv.elt.style.display = 'block';
       p.noStroke();

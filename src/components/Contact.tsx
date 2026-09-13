@@ -1,5 +1,4 @@
 import { contact } from '@/data';
-import { usePortfolio } from '@/context/PortfolioContext';
 import type { ContactIconKey } from '@/types/portfolio';
 
 const GLYPH: Partial<Record<ContactIconKey, string>> = {
@@ -9,7 +8,6 @@ const GLYPH: Partial<Record<ContactIconKey, string>> = {
 };
 
 export function Contact() {
-  const { hoverSfx } = usePortfolio();
 
   return (
     <section className="py-[66px] relative" id="contact">
@@ -28,7 +26,6 @@ export function Contact() {
               target={link.external ? '_blank' : undefined}
               rel={link.external ? 'noreferrer' : undefined}
               className={`btn-pixel pix ${link.style === 'primary' ? 'bg-p1 text-white' : 'bg-card text-ink'}`}
-              {...hoverSfx()}
             >
               {GLYPH[link.icon] ? `${GLYPH[link.icon]} ` : ''}
               {link.label}

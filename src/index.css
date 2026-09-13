@@ -14,6 +14,7 @@
   --p4: #2fa84f;
   --glow: 5px 5px 0;
   --scan-opacity: 0;
+  --scanline-opacity: 0;
   --dot: rgba(27, 22, 16, 0.1);
 }
 :root[data-theme='dark'] {
@@ -29,6 +30,7 @@
   --p4: #4dff9e;
   --glow: 0 0 16px;
   --scan-opacity: 1;
+  --scanline-opacity: 0;
   --dot: rgba(120, 90, 255, 0.18);
 }
 
@@ -95,7 +97,7 @@ body {
   inset: 0;
   z-index: 60;
   pointer-events: none;
-  opacity: calc(var(--scan-opacity) * 0.45);
+  opacity: calc(var(--scanline-opacity) * 0.45);
   background: repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.28) 0 1px, transparent 1px 3px);
   mix-blend-mode: multiply;
 }

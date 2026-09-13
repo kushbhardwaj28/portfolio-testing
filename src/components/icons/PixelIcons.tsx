@@ -75,7 +75,7 @@ export function GamepadIcon(props: IconProps) {
       <rect x="2" y="5" width="12" height="7" />
       <rect x="0" y="7" width="2" height="4" />
       <rect x="14" y="7" width="2" height="4" />
-      <g fill="rgba(0,0,0,.55)">
+      <g fill="var(--bg)" fillOpacity={0.55}>
         <rect x="3" y="8" width="4" height="1" />
         <rect x="4" y="7" width="2" height="3" />
         <rect x="9" y="6" width="1" height="1" />

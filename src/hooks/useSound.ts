@@ -76,11 +76,11 @@ export function useSound() {
 
   const hoverSfx = useCallback(
     (onClick?: () => void) => ({
-      onMouseEnter: () => playBlip(880, 0.04, 'square'),
       onClick: () => {
         playBlip(520, 0.06, 'square');
         onClick?.();
       },
+      onMouseEnter: () => {}
     }),
     [playBlip],
   );
